@@ -92,10 +92,7 @@ action _drop() {
 header_type routing_metadata_t {
     fields {
         nhop_ipv4 : 32;
-        // TODO: if you need extra metadata for ECMP, define it here
-        // SOLUTION --->
         ecmp_offset : 14; // offset into the ecmp table
-        // <--- SOLUTION
     }
 }
 metadata routing_metadata_t routing_metadata;
